@@ -1,0 +1,25 @@
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+
+    .newsfeed {
+        margin: 0 auto;
+    }
+
+    aside {
+        width: 20rem;
+        background-color: lightgray;
+        height: calc(100vh - 5rem);
+        position: fixed;
+        top: 5rem;
+
+        &.leftSide {
+            left: 0;
+        }
+
+        &.rightSide {
+            right: 0;
+        }
+    }
+}

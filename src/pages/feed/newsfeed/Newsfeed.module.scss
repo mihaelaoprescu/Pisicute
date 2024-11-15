@@ -1,0 +1,97 @@
+.mainPost {
+    width: 35rem;
+    border: transparent;
+    background-color: white;
+    margin: 1rem 0;
+
+    .userInfo {
+        display: flex;
+        margin: 0 1rem;
+        justify-content: space-between;
+        align-items: center;
+
+        .profilePictureImg {
+            height: 3rem;
+            border-radius: 50%;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .contextMenu {
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer; 
+            &:hover {
+                box-shadow: 1px 4px teal;
+            }
+        }
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+
+        p {
+            margin: 0.8rem 1rem;
+            align-self: flex-start;
+            text-align: justify;
+        }
+
+        .imageWrapper {
+            position: relative;
+            .mainPostImage {
+                max-width: 100%;
+            }
+            .infoIcon {
+                cursor: pointer;
+                position: absolute;
+                right: 3rem;
+                bottom: -1rem;
+            }
+        }   
+    }
+
+    .reacts {
+        display: flex;
+        justify-content: space-between;
+        margin: 0.5rem;
+
+        .reactsNumber {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+        }
+    }
+
+    .reactsActions {
+        display: flex;
+        justify-content: space-around;
+        margin: 0.5rem 0;
+
+        .reaction {
+            display: flex;
+            cursor: pointer;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+                background-color: lightblue;
+            }
+
+            &.blue {
+                color: blue;
+            }
+        }
+    }
+}
